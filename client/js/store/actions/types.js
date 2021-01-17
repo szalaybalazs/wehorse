@@ -1,0 +1,3 @@
+export const FETCH_COURSES = 'FETCH_COURSES';
+export const WISHLIST = 'WISHLIST';
+export const WISHLIST_FILTER = 'WISHLIST_FILTER';
