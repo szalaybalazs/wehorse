@@ -5,12 +5,19 @@ import { connect } from 'react-redux';
 import { fetchCourses } from '../store/actions/courseActions';
 
 const Courses = ({ courses = [], fetchCourses = () => {}, wishlistFilter }) => {
+  // Load courses
+  useEffect(() => {
+    fetchCourses()
+  }, []);
+  
+  // Should be done on the server side via new featch request
+  const displayedCourses = courses.filter(course => !wishlistFilter || course.wishListFlag);
+  
   
   // Load courses
   useEffect(() => {
     fetchCourses(wishlistFilter)
   }, [wishlistFilter]);
-
   return (
     <Fragment>
       <Header />
@@ -32,10 +39,10 @@ const Courses = ({ courses = [], fetchCourses = () => {}, wishlistFilter }) => {
         <Search />
         <Box mb={6}>
           <Typography align='center'>
-            { courses.length } Kurse
+            { displayedCourses.length } Kurse
           </Typography>
         </Box>
-        { courses.map(course => <Course key={course.courseId} {...course} />)}
+        { displayedCourses.map(course => <Course key={course.courseId} {...course} />)}
       </Container>
     </Fragment>
   )

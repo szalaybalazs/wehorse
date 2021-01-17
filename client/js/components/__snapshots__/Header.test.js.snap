@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly 1`] = `
+<WithStyles(ForwardRef(AppBar))
+  elevation={0}
+  position="fixed"
+>
+  <Styled(MuiBox)
+    bgcolor="background"
+  >
+    <WithStyles(ForwardRef(Toolbar))>
+      <Styled(MuiBox)
+        display="flex"
+        flex="1"
+        gbcolor="background"
+        height={80}
+        justifyContent="space-between"
+        pb={2}
+        pt={2}
+      >
+        <Styled(MuiBox)
+          display="flex"
+          mr="auto"
+        >
+          <Logo />
+        </Styled(MuiBox)>
+        <WithStyles(ForwardRef(IconButton))
+          aria-label="search"
+          color="inherit"
+          edge="end"
+        >
+          <Memo([object Object]) />
+        </WithStyles(ForwardRef(IconButton))>
+        <WithStyles(ForwardRef(IconButton))
+          aria-label="menu"
+          color="inherit"
+          edge="end"
+        >
+          <Memo([object Object]) />
+        </WithStyles(ForwardRef(IconButton))>
+      </Styled(MuiBox)>
+    </WithStyles(ForwardRef(Toolbar))>
+  </Styled(MuiBox)>
+</WithStyles(ForwardRef(AppBar))>
+`;
