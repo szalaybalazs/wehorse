@@ -20,7 +20,7 @@ At the moment the server uses a simple JSON database, which could be changed to 
 
 ### Frontend
 
-Written in javascript, using react, material-ui & redux.
+Written in javascript, using react, material-ui & redux, compiled by webpack.
 
 Mainly created for mobile devices.
 
