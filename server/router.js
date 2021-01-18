@@ -9,6 +9,7 @@ const database = require('./database');
 // API
 app.use('/api', cors({ origin: (o, cb) => cb(null, true), credentials: true }), api);
 
+// Uncomment this to use the local client
 // // Root
 // Router.use('/', root);
 
